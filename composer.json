@@ -1,0 +1,26 @@
+{
+    "name": "karelwintersky/arris.toolkit.sphinxql-foolz-wrapper",
+    "description": "Arris µFramework SphinxQL Wrapper over Foolz Query Builder",
+    "type": "library",
+    "homepage": "https://github.com/ArrisFramework/SphinxQL.Foolz.Wrapper",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Karel Wintersky",
+            "email": "karel.wintersky@yandex.ru"
+        }
+    ],
+    "require": {
+        "php": ">=7.4 | 8.*",
+        "psr/log": "*",
+        "foolz/sphinxql-query-builder": "^3.0.2"
+    },
+    "autoload": {
+        "psr-4": {
+            "Arris\\Toolkit\\SphinxQL\\": [ "src" ]
+        }
+    },
+    "require-dev": {
+        "rector/rector": "^1.2"
+    }
+}

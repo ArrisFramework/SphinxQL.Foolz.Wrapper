@@ -358,8 +358,9 @@ class FoolzWrapper implements FoolzWrapperInterface
             $meta = self::showMeta(self::$connection);
 
             self::$logger->error(
-                __CLASS__ . '/' . __METHOD__ .
-                " Error fetching data from [{$source_index}] : " . $e->getMessage(),
+                self::class . '::' . __METHOD__ .
+                ": Error fetching data from [{$source_index}] : " .
+                $e->getMessage(),
                 [
                     $e->getCode(),
                     \htmlspecialchars(\urldecode($_SERVER['HTTP_HOST'] . $_SERVER['REQUEST_URI'])),
